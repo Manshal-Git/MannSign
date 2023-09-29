@@ -21,8 +21,11 @@
         nav {
             background-color: #555;
             color: #fff;
-            padding: 10px;
+            padding: 16px;
             text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
 
         nav a {
@@ -34,24 +37,33 @@
         #content {
             padding: 20px;
         }
+        iframe {
+            border: none; /* Remove iframe border */
+            width: 100%;
+            height: 500px;
+            overflow: auto; /* Add scrollbar when content exceeds iframe height *
+        }
     </style>
 </head>
 
 <body>
 <header>
-    <h1>Mann Sign</h1>
+    <h1>Mann Sign - Policy</h1>
 </header>
-
-<nav>
-    <a href="#" onclick="loadPrivacyPolicy()">Privacy Policy</a>
-    <a href="#" onclick="loadTermsOfService()">Terms of Service</a>
-    <a href="#" onclick="loadShippingPolicy()">Shipping Policy</a>
-</nav>
 
 <div id="content">
     <!-- Policy content will be dynamically loaded here -->
 </div>
-
+<footer>
+    <nav>
+        <a href="#privacy_policy" onclick="loadPrivacyPolicy()">Privacy Policy</a>
+        <a href="#terms_of_service" onclick="loadTermsOfService()">Terms of Service</a>
+        <a href="#cancellation_and_refund" onclick="loadCancellationAndRefund()">Cancellation and Refund</a>
+        <a href="#shipping_policy" onclick="loadShippingPolicy()">Shipping Policy</a>
+        <a href="#return_policy" onclick="loadReturn()">Return Policy</a>
+        <a href="#cutomer_support" onclick="custSupport()">Customer Support</a>
+    </nav>
+</footer>
 <script>
         // JavaScript functions to load policy pages
         function loadPrivacyPolicy() {
@@ -63,8 +75,22 @@
         }
 
         function loadShippingPolicy() {
-            document.getElementById("content").innerHTML = "<iframe src='shipping_policy.html' width='100%' height='500'></iframe>";
+            document.getElementById("content").innerHTML = "<iframe src='shipping%20policy.html' width='100%' height='500'></iframe>";
         }
+        function loadCancellationAndRefund() {
+            document.getElementById("content").innerHTML = "<iframe src='cancellation%20and%20refund.html' width='100%' height='500'></iframe>";
+        }
+        function loadReturn() {
+            document.getElementById("content").innerHTML = "<iframe src='return%20policy.html' width='100%' height='500'></iframe>";
+        }
+        function custSupport() {
+            document.getElementById("content").innerHTML = "<iframe src='customer%20support.html' width='100%' height='500'></iframe>";
+        }
+
+        function loadHome() {
+            document.getElementById("content").innerHTML = "<iframe src='https://mannsign.business.site/?utm_source=gmb&utm_medium=referral' width='100%' height='500'></iframe>";
+        }
+        loadPrivacyPolicy();
     </script>
 </body>
 
