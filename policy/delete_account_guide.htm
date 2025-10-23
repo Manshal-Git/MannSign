@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>How to Delete Your Account — Game Name</title>
+  <style>
+    :root{--bg:#f6f8fb;--card:#ffffff;--accent:#0066ff;--muted:#6b7280;--danger:#d9534f}
+    html,body{height:100%;margin:0;background:var(--bg);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+    .container{max-width:900px;margin:36px auto;padding:20px}
+    header{display:flex;gap:16px;align-items:center}
+    .logo{width:64px;height:64px;background:linear-gradient(135deg,#6ea8ff,#0050d4);border-radius:12px;display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    h1{margin:0;font-size:1.5rem}
+    p.lead{color:var(--muted);margin-top:8px}
+    .card{background:var(--card);border-radius:12px;padding:18px;margin-top:18px;box-shadow:0 6px 18px rgba(12,20,40,0.06)}
+    ol.steps{counter-reset:step;list-style:none;padding:0;margin:0}
+    ol.steps li{display:grid;grid-template-columns:48px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid #f1f5f9}
+    ol.steps li:last-child{border-bottom:0}
+    .step-num{width:48px;height:48px;border-radius:10px;background:#eef5ff;color:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.1rem}
+    .step-title{font-weight:600;margin:0}
+    .step-desc{color:var(--muted);margin:6px 0 0}
+    .hint{font-size:0.95rem;color:#374151;margin-top:10px}
+    .danger{background:linear-gradient(180deg,#fff5f5,#fff0f0);border-left:4px solid var(--danger);padding:12px;border-radius:8px;margin-top:12px;color:#6b1a18}
+    .controls{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;border:0;background:var(--accent);color:white;font-weight:600;cursor:pointer}
+    .btn.ghost{background:transparent;color:var(--accent);border:1px solid rgba(0,102,255,0.12)}
+    footer{color:var(--muted);font-size:0.9rem;margin-top:22px}
+    @media print{body{background:white} .controls, header{display:none}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+<img src="logo.webp" class="logo"></img><h1> Poke Quiz: Masters Journey </h1>
+    </header>
+    
+    <br/>
+    <br/>
+    <div>
+        <h1>How to Delete Your Account</h1>
+        <p class="lead">Follow these steps to permanently delete your game account and associated data.</p>
+      </div>
+
+    <section class="card">
+      <h2 style="margin-top:0">Quick steps</h2>
+      <ol class="steps">
+        <li>
+          <div class="step-num">1</div>
+          <div>
+            <p class="step-title">Open the game</p>
+            <p class="step-desc">Launch the game app on the device where your account is logged in.</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="step-num">2</div>
+          <div>
+            <p class="step-title">Go to the main dashboard screen</p>
+            <p class="step-desc">If you are on a landing screen,navigate to app's main dashboard screen.</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="step-num">3</div>
+          <div>
+            <p class="step-title">Navigate to the Profile tab</p>
+            <p class="step-desc">Tap on the profile tab(usually last in LTR layouts) to open your profile page.</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="step-num">4</div>
+          <div>
+            <p class="step-title">Tap the Settings (gear) icon</p>
+            <p class="step-desc">Open the settings menu from within your profile.</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="step-num">5</div>
+          <div>
+            <p class="step-title">Select <em>Account and Data</em></p>
+            <p class="step-desc">Choose the <strong>Account and Data</strong> option to view account controls.</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="step-num">6</div>
+          <div>
+            <p class="step-title">Choose <em>Delete Account</em></p>
+            <p class="step-desc">Tap <strong>Delete Account</strong> to begin the deletion process.</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="step-num">7</div>
+          <div>
+            <p class="step-title">Provide confirmation</p>
+            <p class="step-desc">Read the warning and confirm that you want to permanently delete your account. This action cannot be undone.</p>
+          </div>
+        </li>
+      </ol>
+
+      <!-- <div class="hint">Tip: If you are deleting because you are changing devices, consider using the built-in account transfer or backup options first.</div> -->
+
+      <div class="danger">
+        <strong>Important:</strong>
+        Deleting your account will permanently remove your profile, progress, purchases, and any associated data.
+      </div>
+
+      <div class="controls">
+        <button class="btn" onclick="window.print()">Print Instructions</button>
+        <button class="btn ghost" onclick="openSupport()">Contact Support</button>
+      </div>
+
+      <footer>
+        If you need help, contact our support at <a href="mailto:manshalkhatri51+pokequiz@gmail.com">manshalkhatri51@gmail.com</a>
+      </footer>
+    </section>
+  </div>
+
+  <script>
+    function openSupport(){
+      window.location.href = 'mailto:manshalkhatri51+pokequiz@gmail.com?subject=Account%20Deletion%20Help';
+    }
+  </script>
+</body>
+</html>
